@@ -1,0 +1,90 @@
+
+//  _navbar.php
+.navbar
+    min-height: 75px
+    box-shadow: 0px 4px 4px #000
+    .collapse
+        float: left !important
+    .navbar-brand
+        font-size: 20px
+        font-weight: 700
+        text-shadow: 3px 3px 4px #000
+    .navbar-nav
+        font-family: Georgia, 'Times New Roman', Times, serif
+        font-size: 17px
+        .nav-item
+            margin: 5px
+            padding: 0px 20px
+
+// index.php
+@keyframes bodybg
+    0%
+        background-image: linear-gradient(to left, #222222c2, #111111be, #000000bb), url('2.jpg')
+    25%
+        background-image: linear-gradient(to left, #222222c2, #111111be, #000000bb), url('3.jpg')
+    50%
+        background-image: linear-gradient(to left, #222222c2, #111111be, #000000bb), url('4.jpg')
+    75%
+        background-image: linear-gradient(to left, #222222c2, #111111be, #000000bb), url('1.webp')
+    100%
+        background-image: linear-gradient(to left, #222222c2, #111111be, #000000bb), url('2.jpg')
+body
+    background-color: #222
+    animation: bodybg 20s infinite
+    animation-timing-function: ease-in-out
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 
+    min-height: 100vh
+.indexdiv
+    min-height: 90vh
+    .indexindiv
+        min-height: 60vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .donatetxt
+            color: #fff
+            font-family: cursive
+            font-size: 2.5rem 
+        .donatediv
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 10px
+            .PaymentButton--rzp-dark-standard.svelte-ekc7fv.svelte-ekc7fv
+                padding: 5px
+                height: 50px
+                border: 2px solid #44acc4
+                border-radius: 10px
+        .smiles
+            color: #44acc4
+            .smilesbox
+                display: flex
+                display-content: center
+                align-items: center
+                flex-wrap: wrap
+                .box
+                    width: 300px
+                    padding: 10px
+                    border: 0.5px solid #44acc4
+                    border-radius: 25px
+                    margin: 1.5px
+                    .no
+                        font-size: 45px
+                        font-weight: 800
+                        text-shadow: 2px 2px 2px #fff
+                    .txt
+                        font-size: 18px
+                        color: #ccc
+
+// _footer.php
+.footerdiv
+    background-color: #222
+    color: #999
+    font-size: 0.9rem
+    .crights
+        display: flex
+        justify-content: space-evenly
